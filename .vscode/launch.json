@@ -1,0 +1,4 @@
+{
+  "version": "0.2.0",
+  "configurations": [{"name": "Train synthetic loan-label tree", "type": "debugpy", "request": "launch", "module": "loan_prediction", "args": ["train"], "cwd": "${workspaceFolder}", "console": "integratedTerminal", "justMyCode": true}]
+}

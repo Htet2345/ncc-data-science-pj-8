@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label": "Train model", "type": "process", "command": "${workspaceFolder}/.venv/Scripts/python.exe", "args": ["-m", "loan_prediction", "train"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []},
+    {"label": "Classify fictional example", "type": "process", "command": "${workspaceFolder}/.venv/Scripts/python.exe", "args": ["-m", "loan_prediction", "predict", "--income", "60000", "--amount", "120000", "--term", "120", "--credit-score", "720", "--debt-ratio", "0.25", "--employment", "salaried"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []},
+    {"label": "Run tests", "type": "process", "command": "${workspaceFolder}/.venv/Scripts/python.exe", "args": ["-m", "pytest", "-q"], "options": {"cwd": "${workspaceFolder}"}, "group": {"kind": "test", "isDefault": true}, "problemMatcher": []}
+  ]
+}
